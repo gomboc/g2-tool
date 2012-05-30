@@ -24,10 +24,19 @@ Depending on your OS distribution and/or your PHP environment, you may need to i
 
 The following two commands (which you may have to run as `root`) are all that is required to install G2 Tool using the PEAR Installer:
 
-    pear channel-discover gomboc.github.com/pear
-    pear install g2/< to be decided >
+    $ pear channel-discover gomboc.github.com/pear
+    $ pear install g2/< to be decided >
 
 After the installation you can find the G2 Tool source files inside your local PEAR directory; the path is usually `/usr/share/php/< to be decided >`.
 
 Documentation
 -------------
+
+...
+
+Development
+-----------
+
+To create example project run:
+
+	$ ./zf create project-g2 example
