@@ -15,8 +15,8 @@ Requirements
 * PHP 5.2 (or later) but PHP 5.3 (or later) is highly recommended.
 * Zend Framework 1.9 (or later)
 
-Installation
-------------
+Install
+-------
 
 G2 Tool should be installed using the PEAR Installer, the backbone of the [PHP Extension and Application Repository](http://pear.php.net/) that provides a distribution system for PHP packages.
 
@@ -25,14 +25,36 @@ Depending on your OS distribution and/or your PHP environment, you may need to i
 The following two commands (which you may have to run as `root`) are all that is required to install G2 Tool using the PEAR Installer:
 
     $ pear channel-discover gomboc.github.com/pear
-    $ pear install g2/< to be decided >
+    $ pear install g2/G2_Tool
 
-After the installation you can find the G2 Tool source files inside your local PEAR directory; the path is usually `/usr/share/php/< to be decided >`.
+After the installation you can find the G2 Tool source files inside your local PEAR directory; the path is usually `/usr/share/php/G2/Tool`.
+
+Add G2_Tool_Manifest class to .zf.ini
+
+	$ nano ~/.zf.ini
+	
+.zf.ini
+
+	basicloader.classes.0 = "G2_Tool_Manifest"
+	
+Uninstall
+---------
+
+Remove package (run as `root`):
+
+	$ pear uninstall g2/G2_Tool
+	
+Remove G2_Tool_Manifest class from .zf.ini
+
+	$ nano ~/.zf.ini
 
 Documentation
 -------------
 
-...
+To create new project in workspace run:
+
+	$ cd ~/workspace
+	$ zf create project-g2 test
 
 Development
 -----------
