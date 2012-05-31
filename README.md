@@ -42,7 +42,7 @@ Uninstall
 
 Remove package (run as `root`):
 
-	$ pear uninstall g2/G2_Toolgit s
+	$ pear uninstall g2/G2_Tool
 	
 Remove G2_Tool_Manifest class from .zf.ini
 
