@@ -51,7 +51,7 @@ Remove G2_Tool_Manifest class from .zf.ini
 Documentation
 -------------
 
-To create new project in workspace run:
+To create new g2 project in workspace run:
 
 	$ cd ~/workspace
 	$ zf create project-g2 test
