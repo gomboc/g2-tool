@@ -1,7 +1,7 @@
 G2 Tool
 =======
 
-G2 Tool is extension to Zend_Tool.
+Zend_Tool extension.
 
 Contributors
 ------------
